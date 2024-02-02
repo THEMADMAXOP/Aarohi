@@ -1,6 +1,6 @@
 """
-Copyright (c) 2024 @dil_sagar_121
-Copyright (c) 2024 @Alone_Dil_bot
+Copyright (c) 2024 @sashikant_xd
+Copyright (c) 2024 @aarohixmusicbot
 """
 
 import uuid
@@ -30,8 +30,8 @@ But then you have many groups, and you don't want this spammer to be in one of y
 You can even designate federation admins, so your trusted admin can ban all the spammers from chats you want to protect.\n\n
 """
 
-BOT_ID = "5791601466"
-SUPPORT_CHAT = "@alonegroup121"
+BOT_ID = "6748411845"
+SUPPORT_CHAT = "@voiceofheart0"
 COMMAND_HANDLER = ("/")
 
 
