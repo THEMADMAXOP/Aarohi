@@ -5,7 +5,7 @@ from AarohiX import app
 
 #--------------------------
 
-MUST_JOIN = "LOVE_FEELINGS_WILL1"
+MUST_JOIN = "voiceofheart0"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):
@@ -26,11 +26,11 @@ async def must_join_channel(app: Client, msg: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("</> ᴍᴜsɪᴄ ʙᴏᴛ[❣️]", url=f"https://t.me/Alone_Dil_bot?startgroup=true"),
+                                InlineKeyboardButton("</> ᴍᴜsɪᴄ ʙᴏᴛ[❣️]", url=f"https://t.me/AAROHIXMUSICBOT?startgroup=true"),
                             ],
                             [
                                 InlineKeyboardButton("</> sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ[❣️]", url=link),
-                                InlineKeyboardButton("</> ᴄʜᴀɴɴᴇʟ ᴄʜᴀᴛ[❣️]", url=f"https://t.me/AllPremiumBIN"),
+                                InlineKeyboardButton("</> ᴄʜᴀɴɴᴇʟ ᴄʜᴀᴛ[❣️]", url=f"https://t.me/statusdairy2"),
                             ],
                         ]
                     )
