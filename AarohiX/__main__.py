@@ -50,7 +50,7 @@ async def init():
         pass
     await Dil.decorators()
     LOGGER("AarohiX").info(
-        "Music Bot Started Successfully, Now Gib your girlfriend chumt to @LOVE_FEELINGS_WILL1"
+        "Music Bot Started Successfully, Now Gib your girlfriend chumt to @SASHIKANT_XD"
     )
     await idle()
     await app.stop()
