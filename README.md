@@ -3,12 +3,12 @@
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 <h2 align="center">
-    ──「 ᴀᴀʀᴏʜɪ ✘ ᴍᴜsɪᴄ ᴠ2 」──
+    ──「 ᴀᴀʀᴏʜɪ ✘ ᴍᴜsɪᴄ 」──
 </h2>
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-<p align="center"><a href="https://t.me/about_sashikant"><img src="https://te.legra.ph/file/8d4d7d5dc2e7cf675d80c.jpg"></a></p>
+<p align="center"><a href="https://t.me/about_sashikant"><img src="https://telegra.ph/file/74c1f331c73cfa5e43ade.jpg"></a></p>
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
