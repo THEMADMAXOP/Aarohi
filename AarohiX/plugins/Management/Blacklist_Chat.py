@@ -112,6 +112,6 @@ async def blacklist_filters_re(client, message):  # Added 'client' argument
 
 
 """
-Copyright (c) 2024 @dil_sagar_121
-Copyright (c) 2024 @Alone_Dil_bot
+Copyright (c) 2024 @about_sashikant
+Copyright (c) 2024 @aarohixmusicbot
 """
