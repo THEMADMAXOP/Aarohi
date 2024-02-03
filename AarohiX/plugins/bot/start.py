@@ -9,7 +9,7 @@ import config
 from AarohiX import app
 from AarohiX.misc import _boot_
 from AarohiX.plugins.sudo.sudoers import sudoers_list
-from AnonXMusic.madmax import EMOJIOS, STICKER
+from AarohiX.madmax import EMOJIOS, STICKER
 from AarohiX.utils import bot_sys_stats
 from AarohiX.utils.database import (
     add_served_chat,
