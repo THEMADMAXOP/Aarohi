@@ -1,16 +1,15 @@
 import time
-import random 
+import random
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
-import asyncio
+
 import config
 from AarohiX import app
 from AarohiX.misc import _boot_
 from AarohiX.plugins.sudo.sudoers import sudoers_list
-from AarohiX.madmax import EMOJIOS, STICKER
-from AarohiX.utils.database import get_served_chats, get_served_users, get_sudoers
+from AnonXMusic.madmax import EMOJIOS, STICKER
 from AarohiX.utils import bot_sys_stats
 from AarohiX.utils.database import (
     add_served_chat,
@@ -22,10 +21,9 @@ from AarohiX.utils.database import (
 )
 from AarohiX.utils.decorators.language import LanguageStart
 from AarohiX.utils.formatters import get_readable_time
-from AarohiX.utils.inline import help_pannel, private_panel, start_panel
+from AarohiX.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
-
 
 
 #<<<<<<<<<<<<<pics>>>>>>>>>>>#
