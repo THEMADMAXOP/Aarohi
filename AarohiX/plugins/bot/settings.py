@@ -99,12 +99,12 @@ async def gib_repo_callback(_, callback_query):
         media=InputMediaVideo("https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
-                [close_button]
+                [back_button]
             ]
         ),
     )
 
-close_button = InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data="close")
+close_button = InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data="startsback_helper")
 
 @app.on_callback_query(filters.regex("^bot_info_data$"))
 async def show_bot_info(c: app, q: CallbackQuery):
