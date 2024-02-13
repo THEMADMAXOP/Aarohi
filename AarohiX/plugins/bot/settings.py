@@ -96,7 +96,7 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
 @app.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", has_spoiler=True),
+        media=InputMediaVideo("https://telegra.ph/file/78be765f35211e764a9d5.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
                 [back_button]
@@ -104,7 +104,7 @@ async def gib_repo_callback(_, callback_query):
         ),
     )
 
-close_button = InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data="settingsback_helper")
+close_button = InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data="settingsback_helper")
 
 @app.on_callback_query(filters.regex("^bot_info_data$"))
 async def show_bot_info(c: app, q: CallbackQuery):
