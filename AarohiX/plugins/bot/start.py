@@ -9,6 +9,7 @@ import config
 from AarohiX import app
 from AarohiX.misc import _boot_
 from AarohiX.plugins.sudo.sudoers import sudoers_list
+from Aarohi.madmax import EMOJIOS, STICKER
 from AarohiX.utils import bot_sys_stats
 from AarohiX.utils.database import (
     add_served_chat,
@@ -50,8 +51,25 @@ async def start_pm(client, message: Message, _):
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
-            keyboard = first_page(_)
-            await message.reply_sticker("CAACAgUAAxkBAAIBXmW82AY44MipkPbZrAbKn-HCffZDAAI2BgACSF4YV3PG1tY8zOd5NAQ")
+            keyboard = help_pannel(_)
+            accha = await message.reply_text(
+            text=random.choice(EMOJIOS),
+            )
+            await asyncio.sleep(1)
+            await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠..")
+            await asyncio.sleep(0.1)
+            await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠...")
+            await asyncio.sleep(0.1)
+            await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠....")
+            await asyncio.sleep(0.1)
+            await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐞𝐝.✓")
+            await asyncio.sleep(0.2)
+            await accha.edit("𝐒𝐭𝐚𝐫𝐭")
+            await asyncio.sleep(0.2)
+            await accha.delete()
+            umm = await message.reply_sticker(sticker=random.choice(STICKER))
+            await asyncio.sleep(2)
+            await umm.delete()
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -114,8 +132,25 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_sticker("CAACAgUAAxkBAAIBXmW82AY44MipkPbZrAbKn-HCffZDAAI2BgACSF4YV3PG1tY8zOd5NAQ")
-        await message.reply_photo(
+        served_chats = len(await get_served_chats())
+        served_users = len(await get_served_users())
+        UP, CPU, RAM, DISK = await bot_sys_stats()
+        accha = await message.reply_text(
+            text=random.choice(EMOJIOS),
+        )
+        await asyncio.sleep(1)
+        await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠..")
+        await asyncio.sleep(0.1)
+        await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠...")
+        await asyncio.sleep(0.1)
+        await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠....")
+        await asyncio.sleep(0.1) 
+        await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐞𝐝.✓")
+        await asyncio.sleep(0.2)
+        await accha.edit("𝐒𝐭𝐚𝐫𝐭")
+        await asyncio.sleep(0.2)
+        await accha.delete()
+        umm = await message.reply_sticker(sticker=random.choice(STICKER))
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
