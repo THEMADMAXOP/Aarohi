@@ -30,13 +30,18 @@ from strings import get_string
 
 """
 ADISA_PICS = [
-"https://graph.org/file/e0c7e04cc0acff425fe5d.jpg",
-"https://graph.org/file/0f256eac6f4a8a053193a.jpg",
-"https://graph.org/file/e3babc6e511746be05204.jpg",
-"https://graph.org/file/323acfeef219c919091ec.jpg",
-"https://graph.org/file/1f34f63999a5599051b94.jpg",
-"https://graph.org/file/528b50c44cbfedda9c77e.jpg",
-"https://graph.org/file/365b3ab63ccd789f99bb4.jpg"
+"https://telegra.ph/file/23f73435a6ecfd4672f7a.jpg",
+"https://telegra.ph/file/876d368cdbc7ff8ec9da1.jpg",
+"https://telegra.ph/file/e612d72e6c34169d25f0a.jpg",
+"https://telegra.ph/file/bcd8260e9a0b017c6093a.jpg",
+"https://telegra.ph/file/f34821eda0b7f6d6dd1e0.jpg",
+"https://telegra.ph/file/d2de9d8ae78ea6728a396.jpg",
+"https://telegra.ph/file/98f4a927d3ece2d533288.jpg",
+"https://telegra.ph/file/3a0193ab0784f4ea72e01.jpg",
+"https://telegra.ph/file/908acc43a5bc5efa3eb64.jpg",
+"https://telegra.ph/file/4da8c3c33986ddcf6b3bf.jpg",
+"https://telegra.ph/file/08d0607336afdd7cb657e.jpg",
+"https://telegra.ph/file/a3c08fe02de2e0a44cc38.jpg"
 ]
 
 
@@ -71,7 +76,7 @@ async def start_pm(client, message: Message, _):
             await asyncio.sleep(2)
             await umm.delete()
             return await message.reply_photo(
-                photo=config.START_IMG_URL,
+                random.choice(ADISA_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
@@ -151,7 +156,8 @@ async def start_pm(client, message: Message, _):
         await asyncio.sleep(0.2)
         await accha.delete()
         umm = await message.reply_sticker(sticker=random.choice(STICKER))
-            photo=config.START_IMG_URL,
+            await message.reply_photo(
+            random.choice(ADISA_PICS),
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
